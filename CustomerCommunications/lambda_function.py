@@ -17,7 +17,7 @@ db_cluster_arn = 'arn:aws:rds:us-east-1:471376517949:cluster:orders-db-cluster'
 
 
 #SES declarations
-source_email = "pratheeksha.rao89@gmail.com"
+source_email = "orders@example.com"
 charset = 'utf-8'
 
 def send_email(dest_email):
