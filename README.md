@@ -47,8 +47,11 @@ The Order Management System is a robust and scalable solution designed to handle
    	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerContactInfoTableCreated.jpg)
 
 18.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
-19.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
-20.	Use the Postman tool to PUT a test record to the API Gateway.
+
+       ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/LocalInvokeCode.jpeg)
+        
+20.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
+21.	Use the Postman tool to PUT a test record to the API Gateway.
 
 
 ## Results and Observations
