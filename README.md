@@ -50,7 +50,11 @@ The Order Management System is a robust and scalable solution designed to handle
 
        ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerContactInfoTableContents.jpg)
 
-18.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
+17.	Navigate to SES console and verify the identities of the sender and receiver email addresses.
+
+       ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/SESVerifiedIdentities.jpg)    
+
+19.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
 
        ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/LocalInvokeCode.jpeg)
         
