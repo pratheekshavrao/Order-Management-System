@@ -63,6 +63,10 @@ The Order Management System is a robust and scalable solution designed to handle
 
 •	Upon the customer order being submitted through API Gateway, a file containing the customer order details is generated in the S3 bucket.
 
+![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/ObjectCreatedS3.jpg)
+	
+![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/ObjectContents.jpg)
+
 •	Initiate Billing function updates the Billing Data table with the order details.
 
 •	Customer Communication function sends an email to customer email ID using SES.
