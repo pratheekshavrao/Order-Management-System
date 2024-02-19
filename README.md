@@ -39,9 +39,16 @@ The Order Management System is a robust and scalable solution designed to handle
 13.	The Initiate Billing Lambda function processes the order data from the event, converts the Bill Amount to USD for consistency, and updates the billing data into the Billing Data table. 
 14.	The Customer Communications Lambda function extracts customer email information from Customer Contact Info table and sends an order confirmation email to customer using SES.
 15.	Create an Aurora serverless database cluster using the below Python code. Then from the Query Editor create two tables – Billing Data and Customer Contact Info. Populate the Customer Contact Info table with test data.
-16.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
-17.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
-18.	Use the Postman tool to PUT a test record to the API Gateway.
+    
+	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/DatabaseCreated.jpg)
+
+	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/BillingDataTableCreated.jpg)
+
+   	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerContactInfoTableCreated.jpg)
+
+18.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
+19.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
+20.	Use the Postman tool to PUT a test record to the API Gateway.
 
 
 ## Results and Observations
