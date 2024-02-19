@@ -21,13 +21,22 @@ The Order Management System is a robust and scalable solution designed to handle
   	
 7.	Navigate to SNS console and create a new SNS topic. Create an event  notification from S3 console to trigger the designated SNS topic for PutObject event. Also modify SNS access policy to allow the S3 bucket 
     to trigger this SNS topic.
-8.	Create 2 Lambda functions  - Initiate  Billing and Customer Communications from Lambda console. Then set these two Lambda functions as subscriptions to the SNS topic created.
-9.	The Initiate Billing Lambda function processes the order data from the event, converts the Bill Amount to USD for consistency, and updates the billing data into the Billing Data table. 
-10.	The Customer Communications Lambda function extracts customer email information from Customer Contact Info table and sends an order confirmation email to customer using SES.
-11.	Create an Aurora serverless database cluster using the below Python code. Then from the Query Editor create two tables – Billing Data and Customer Contact Info. Populate the Customer Contact Info table with test data.
-12.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
-13.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
-14.	Use the Postman tool to PUT a test record to the API Gateway.
+
+    ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/OrderCapturedNotificationSNS.jpg)
+
+
+    ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/S3EventNotificationSNS.jpg)
+
+
+    ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/S3AllowTriggerSNSPolicy.jpg)
+  	
+9.	Create 2 Lambda functions  - Initiate  Billing and Customer Communications from Lambda console. Then set these two Lambda functions as subscriptions to the SNS topic created.
+10.	The Initiate Billing Lambda function processes the order data from the event, converts the Bill Amount to USD for consistency, and updates the billing data into the Billing Data table. 
+11.	The Customer Communications Lambda function extracts customer email information from Customer Contact Info table and sends an order confirmation email to customer using SES.
+12.	Create an Aurora serverless database cluster using the below Python code. Then from the Query Editor create two tables – Billing Data and Customer Contact Info. Populate the Customer Contact Info table with test data.
+13.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
+14.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
+15.	Use the Postman tool to PUT a test record to the API Gateway.
 
 
 ## Results and Observations
