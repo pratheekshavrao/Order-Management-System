@@ -36,9 +36,11 @@ The Order Management System is a robust and scalable solution designed to handle
 
   	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerComminicationsLambdaCreation.jpg)
 	
-13.	The Initiate Billing Lambda function processes the order data from the event, converts the Bill Amount to USD for consistency, and updates the billing data into the Billing Data table. 
-14.	The Customer Communications Lambda function extracts customer email information from Customer Contact Info table and sends an order confirmation email to customer using SES.
-15.	Create an Aurora serverless database cluster using the below Python code. Then from the Query Editor create two tables – Billing Data and Customer Contact Info. Populate the Customer Contact Info table with test data.
+13.	The Initiate Billing Lambda function processes the order data from the event, converts the Bill Amount to USD for consistency, and updates the billing data into the Billing Data table.
+    
+15.	The Customer Communications Lambda function extracts customer email information from Customer Contact Info table and sends an order confirmation email to customer using SES.
+    
+16.	Create an Aurora serverless database cluster using the below Python code. Then from the Query Editor create two tables – Billing Data and Customer Contact Info. Populate the Customer Contact Info table with test data.
     
 	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/DatabaseCreated.jpg)
 
@@ -51,7 +53,10 @@ The Order Management System is a robust and scalable solution designed to handle
        ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/LocalInvokeCode.jpeg)
         
 20.	 Once local testing is successful, upload the Lambda functions into AWS console. For Initiate Billing function add permissions to access S3, RDS Database to the execution role. Similarly for Customer Communications function, add permissions to access S3,RDS database and also SES.
-21.	Use the Postman tool to PUT a test record to the API Gateway.
+    
+22.	Use the Postman tool to PUT a test record to the API Gateway.
+
+	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/PutRecordUsingPostman.jpg)
 
 
 ## Results and Observations
