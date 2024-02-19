@@ -48,6 +48,8 @@ The Order Management System is a robust and scalable solution designed to handle
 
    	![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerContactInfoTableCreated.jpg)
 
+       ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/CustomerContactInfoTableContents.jpg)
+
 18.	For local testing of Lambda functions, download the functions to Cloud9 environment, create event.json and template .yaml files. Use below code from terminal to test the functions.
 
        ![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/LocalInvokeCode.jpeg)
@@ -69,6 +71,10 @@ The Order Management System is a robust and scalable solution designed to handle
 
 •	Initiate Billing function updates the Billing Data table with the order details.
 
+![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/RecordsInsertedBillingDataTable.jpg)
+
 •	Customer Communication function sends an email to customer email ID using SES.
+
+![alt text](https://github.com/pratheekshavrao/Order-Management-System/blob/main/Images/EmailReceived.jpg)
 
 
