@@ -14,8 +14,8 @@ currency_conversion = {'USD': 1, 'CAD': 0.79, 'MXN': 0.05}
 
 #database declarations
 database_name = 'orders_management_aurora'
-secret_store_arn = 'arn:aws:secretsmanager:us-east-1:471376517949:secret:rds-db-credentials/cluster-KBPJLBNDMCIOMAYSASMPW6IHSI/test_username/1706120307628-3FB3ed'
-db_cluster_arn = 'arn:aws:rds:us-east-1:471376517949:cluster:orders-db-cluster'
+secret_store_arn = 'Insert ARN here'
+db_cluster_arn = 'Insert ARN here'
 
 def process_record( parsed_data):
     customer_id = parsed_data["customerId"]
@@ -26,15 +26,6 @@ def process_record( parsed_data):
     currency = parsed_data["currency"]
     bill_amount = parsed_data["billAmount"]
     
-    # Print or use the values
-    print("Customer ID:", customer_id)
-    print("Customer Name:", customer_name)
-    print("Country:", country)
-    print("Product Line:", product_line)
-    print("Bill Date:", bill_date)
-    print("Currency:", currency)
-    print("Bill Amount:", bill_amount)
-
     bill_amount = float(bill_amount)
  
 #convert curreny to USD
