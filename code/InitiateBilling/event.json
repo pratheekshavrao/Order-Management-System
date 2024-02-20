@@ -1,0 +1,11 @@
+{
+  "Records": [
+    {
+      
+      "Sns": {
+        
+        "Message": "{\"Records\":[{\"s3\":{\"bucket\":{\"name\":\"order-management-us-east-1\"},\"object\":{\"key\":\"A1\"}}}]}"
+      }
+    }
+  ]
+}
